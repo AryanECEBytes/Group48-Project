@@ -1,0 +1,27 @@
+BEHAVIOUR:
+
+1. The output is HIGH when both inputs are LOW.
+2. The output remains HIGH when only one input is HIGH.
+3. The output becomes LOW when both inputs are HIGH.
+4. The NMOS transistors form a series pull-down network.
+5. The PMOS transistors form a parallel pull-up network.
+6. The simulated output follows the Boolean expression Y = (A.B)'.
+7. The NAND gate operates as a NOT-AND logic gate.
+
+
+Truth Table:
+
+A    B    Y
+0    0    1
+0    1    1
+1    0    1
+1    1    0
+
+Case 1: When A = 0, B = 0
+        Y = (A.B)' = (0.0)' = 0' = 1
+Case 2: When A = 0, B = 1
+        Y = (A.B)' = (0.1)' = 0' = 1
+Case 3: When A = 1, B = 0
+        Y = (A.B)' = (1.0)' = 0' = 1
+Case 4: When A = 1, B = 1
+        Y = (A.B)' = (1.1)' = 1' = 0
